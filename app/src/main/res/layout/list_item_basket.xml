@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_margin="10dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:id="@+id/textViewProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="name"
+        android:textColor="#212121"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewProduct"
+        app:layout_constraintTop_toTopOf="@+id/imageViewProduct" />
+
+    <TextView
+        android:id="@+id/textViewProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="productPrice"
+        android:textColor="#212121"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewProduct"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductName" />
+
+    <TextView
+        android:id="@+id/textViewProductRawPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="text"
+        android:textColor="#212121"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewProduct"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductPrice" />
+
+    <ImageView
+        android:id="@+id/imageViewAdd"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewProduct" />
+
+    <ImageView
+        android:id="@+id/imageViewMines"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_mines"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewProductQuantity"
+        app:layout_constraintEnd_toStartOf="@+id/textViewProductQuantity"
+        app:layout_constraintTop_toTopOf="@+id/textViewProductQuantity" />
+
+    <TextView
+        android:id="@+id/textViewProductQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="10"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewAdd"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewAdd"
+        app:layout_constraintTop_toTopOf="@+id/imageViewAdd" />
+
+    <ImageView
+        android:id="@+id/imageViewDelete"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_delete" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
